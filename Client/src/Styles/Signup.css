@@ -1,0 +1,50 @@
+/* Signup.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: Montserrat, sans-serif;
+}
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.signup-form h2 {
+  margin-bottom: 20px;
+}
+
+.signup {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.button-signup {
+  width: 75%;
+}
+
+@media (max-width: 600px) {
+  .signup-form {
+    padding: 10px;
+  }
+
+  .signup {
+    width: 100%;
+  }
+
+  .button-Signup {
+    width: 100%;
+    margin: 1rem;
+  }
+}
+.error {
+  color: red;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.success {
+  color: green;
+  font-size: 16px;
+  margin-top: 10px;
+}

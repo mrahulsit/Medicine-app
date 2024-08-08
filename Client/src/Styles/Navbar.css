@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  width: 55px;
+  height: 55px;
+  margin-left: 2dvw;
+}
+.linktag {
+  margin-top: 11vh;
+  display: flex;
+  background-color: #29ab87;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 0;
+  margin-bottom: 4rem;
+}
+.navbar {
+  box-shadow: none;
+}
+.cart-name {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+.cart-name:hover {
+  border-bottom: 2px solid white;
+}
+.margin-navbar {
+  margin-left: 50dvw;
+  margin-top: 1dvh;
+  margin-bottom: 1dvh;
+}
+.horizontal-line {
+  border-left: 3px solid white;
+  height: 3rem;
+  margin-left: 0.5dvw;
+}
+.link-tag {
+  cursor: pointer;
+}
+
+/* Medium screen and up */
+@media (min-width: 768px) {
+  .link-item {
+    margin: 10px;
+  }
+}
+
+/* Large screen and up */
+@media (min-width: 992px) {
+  .linktag {
+    justify-content: space-between;
+  }
+  .link-item {
+    margin: 30px;
+  }
+}
+/* Extra large screen and up */
+@media (min-width: 1200px) {
+  .linktag {
+    justify-content: space-between;
+  }
+  .link-item {
+    margin: 10px;
+  }
+}
+
+/* Mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+  .linktag {
+    margin-top: 5vh;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Mobile devices (portrait) */
+@media only screen and (max-width: 479px) {
+  .linktag {
+    margin-top: 11vh;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,26 @@
+@import "./Styles/BrandCard.css";
+@import "./Styles/Brands.css";
+@import "./Styles/Card.css";
+@import "./Styles/Carousels.css";
+@import "./Styles/Cart.css";
+@import "./Styles/Footer.css";
+@import "./Styles/Healthcare.css";
+@import "./Styles/Home.css";
+@import "./Styles/Login.css";
+@import "./Styles/MedicineCard.css";
+@import "./Styles/Navbar.css";
+@import "./Styles/Sidebar.css";
+@import "./Styles/Signup.css";
+@import "./Styles/Slide.css";
+
+:root {
+  font-weight: 400;
+
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
