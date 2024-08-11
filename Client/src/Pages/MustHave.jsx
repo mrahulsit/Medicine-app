@@ -1,5 +1,4 @@
-import MedicineBrand from "../Components/MedicineBrand";
-import "../index.css";
+import MedicineBrand from "../Components/MedicineBrand/MedicineBrand";
 
 function MustHave() {
   return (

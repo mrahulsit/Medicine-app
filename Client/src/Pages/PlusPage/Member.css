@@ -1,0 +1,36 @@
+.plus-image {
+  width: 100%;
+  padding: 1em 4.5em;
+  margin: 2.5em 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1em;
+}
+
+.explore-button {
+  border: none;
+  background-color: #e5ae07;
+  position: absolute;
+  right: 46%;
+  margin-top: 5%;
+  border-radius: 0.5em;
+  color: #fff;
+  font-weight: 600;
+  width: 10em;
+  padding: 0.5em;
+}
+
+.explore-button > span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.explore-button > span > span {
+  position: relative;
+  bottom: 0.1em;
+}

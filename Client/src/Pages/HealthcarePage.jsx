@@ -1,4 +1,4 @@
-import Healthcare from "../Components/Healthcare.jsx";
+import Healthcare from "../Components/Healthcare/Healthcare";
 
 function HealthcarePage() {
   return (

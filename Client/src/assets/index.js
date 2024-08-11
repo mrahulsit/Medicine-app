@@ -1,11 +1,8 @@
-import item1 from "./item1.jpeg";
+import item1 from "./item1.png";
 import item2 from "./item2.jpeg";
 import item3 from "./item3.jpeg";
 import item4 from "./item4.jpeg";
-import medicine from "./medicines.jpg";
-import healthcare from "./healthcare.png";
-import medicare from "./medicare.jpg";
-import wandc from "./wandc.png";
+// Home Carousel Images
 import musthave from "./medicine.jpg";
 import elder from "./eldercare.jpg";
 import personalcare from "./personalcare.jpg";
@@ -15,8 +12,19 @@ import fitness from "./fitness.jpg";
 import ayurvedic from "./ayuervedic.jpg";
 import diabetic_care from "./diabetic_care.jpg";
 import Mobile from "./Mobile.jpg";
+// LogoImages
 import PHARMACY from "./PHARMACY.png";
 import Pharmacy from "./PharmacyLogo.png";
+// Home-Card Images
+import blogimage from "./blogimage.jpg";
+import wandc from "./wandc.png";
+import medicine from "./medicines.jpg";
+import medicare from "./medicare.jpg";
+import gift from "./giftimage.jpg";
+import protein from "./proteinsuppli.jpg";
+import health from "./healthproduct.jpg";
+// others
+import Pre_Paper from "./paper_pre.png";
 
 export {
   item1,
@@ -24,7 +32,6 @@ export {
   item3,
   item4,
   medicine,
-  healthcare,
   medicare,
   wandc,
   musthave,
@@ -38,4 +45,9 @@ export {
   Mobile,
   PHARMACY,
   Pharmacy,
+  blogimage,
+  gift,
+  protein,
+  health,
+  Pre_Paper,
 };

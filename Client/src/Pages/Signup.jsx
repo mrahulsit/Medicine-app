@@ -3,7 +3,7 @@ import axios from "axios";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
-import "../index.css";
+import "../Styles/Signup.css";
 
 export default function Signup() {
   const [username, setUsername] = useState("");

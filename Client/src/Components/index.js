@@ -1,13 +1,11 @@
-import Card from "./Card.jsx";
-import CarouselSwipe from "./CarouselSwipe.jsx";
-import Footer from "./Footer.jsx";
-import NavMain from "./NavMain.jsx";
-import Pincode from "./Pincode.jsx";
-import Sidebar from "./Sidebar.jsx";
-import BrandCard from "./BrandCard.jsx";
-import Slide from "./Slide.jsx";
-import Brands from "./Brands.jsx";
-import MedicineCard from "./MedicineCard.jsx";
+import Card from "./Card/Card.jsx";
+import CarouselSwipe from "./CarouselBanner/CarouselSwipe.jsx";
+import Footer from "./Footer/Footer.jsx";
+import NavMain from "./Navbar/NavMain.jsx";
+import Pincode from "./Sidebar/Pincode.jsx";
+import Sidebar from "./Sidebar/Sidebar.jsx";
+import MedicineCard from "./MedicineBrand/MedicineCard.jsx";
+import CardHome from "./Home/CardHome.jsx";
 
 export {
   Card,
@@ -16,8 +14,6 @@ export {
   NavMain,
   Pincode,
   Sidebar,
-  BrandCard,
-  Slide,
-  Brands,
   MedicineCard,
+  CardHome,
 };

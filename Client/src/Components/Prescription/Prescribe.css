@@ -1,0 +1,98 @@
+.container-file {
+  width: 90%;
+  height: 14em;
+  border: 2px solid rgba(128, 128, 128, 0.26);
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: 4em;
+  border-radius: 1.1em;
+}
+.order-div {
+  width: 45%;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  height: 100%;
+  background-color: #4ec39c96;
+  padding: 3em;
+  display: flex;
+  gap: 1em;
+}
+.order-heading {
+  font-size: x-large;
+  font-weight: 700;
+}
+.order-caption {
+  font-size: larger;
+  font-weight: 400;
+}
+.file-upload {
+  width: 30%;
+  margin: 0.5em 0;
+  padding: 0.4em;
+  border: none;
+  border-radius: 0.5em;
+}
+.flex-order {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-image {
+  width: auto;
+}
+
+/* Content Procees */
+.content-process {
+  position: absolute;
+  top: 56.5em;
+  right: 7.5em;
+  width: 45%;
+}
+
+.content-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.content-flex > span {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #074d67;
+}
+.process-rules {
+  display: flex;
+  gap: 1em;
+}
+.process-rules div {
+  margin: 0.2em 0em;
+  display: flex;
+  flex-direction: column;
+}
+.rule-text {
+  background-color: rgba(8, 160, 165, 0.941);
+  border-radius: 0.8em;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-weight: 800;
+}
+
+.rule-caption {
+  font-size: 11.5pt;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+table td {
+  border: 0.5px solid rgba(0, 0, 0, 0);
+}
+td.rule-text {
+  margin: 0.6em 0.5em;
+  display: flex;
+  align-items: center;
+  width: 2.5em;
+  height: 2.5em;
+}
+table tr {
+  border: 0.5px solid rgba(0, 0, 0, 0);
+}

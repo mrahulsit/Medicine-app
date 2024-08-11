@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Drawer from "@mui/material/Drawer";
 import Signup from "./Signup.jsx";
-import "../index.css";
+import "../Styles/Login.css";
 
 export default function Login() {
   const [state, setState] = useState({ right: false });
@@ -50,7 +50,9 @@ export default function Login() {
 
   const list = (anchor) => (
     <Box
-      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 400 }}
+      sx={{
+        width: anchor === "top" || anchor === "bottom" ? "auto" : 400,
+      }}
       role="presentation"
     >
       {showSignup ? (
@@ -104,7 +106,7 @@ export default function Login() {
           <>
             <span
               onClick={toggleDrawer("right", true)}
-              style={{ color: "#ffffff" }}
+              style={{ color: "black" }}
             >
               {`${username}`}
             </span>
@@ -112,7 +114,7 @@ export default function Login() {
         ) : (
           <span
             onClick={toggleDrawer("right", true)}
-            style={{ color: "#ffffff" }}
+            style={{ color: "black" }}
           >
             Hello, Log in
           </span>
