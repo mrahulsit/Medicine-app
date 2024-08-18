@@ -43,15 +43,15 @@ function NavMain() {
             <div className="d-none d-lg-flex text-center align-items-center margin-navbar gap-5">
               <Nav.Item className="link-tag">
                 <Link
-                  to="#login"
-                  className="text-decoration-none d-flex flex-row"
+                  to="/login"
+                  className="text-decoration-none item-text-color"
                 >
                   <FontAwesomeIcon
                     icon={faUser}
                     size="lg"
                     className="item-text-color me-2"
                   />
-                  <Login />
+                  Hello,Log in
                 </Link>
               </Nav.Item>
               <Nav.Item>
@@ -124,25 +124,24 @@ function NavMain() {
             </div>
           </Navbar.Collapse>
         </div>
+        <div className="small-nav">
+          <Link to="/medicine" className="link-item">
+            Medicine
+          </Link>
+          <Link to="/healthcare" className="link-item">
+            HealthCare
+          </Link>
+          <Link to="/plus" className="link-item">
+            PLUS
+          </Link>
+          <Link to="/offers" className="link-item">
+            Offers
+          </Link>
+          <Link to="/valuestore" className="link-item">
+            Value Store
+          </Link>
+        </div>
       </Navbar>
-
-      <div className="small-nav">
-        <Link to="/medicine" className="link-item">
-          Medicine
-        </Link>
-        <Link to="/healthcare" className="link-item">
-          HealthCare
-        </Link>
-        <Link to="/plus" className="link-item">
-          PLUS
-        </Link>
-        <Link to="/offers" className="link-item">
-          Offers
-        </Link>
-        <Link to="/valuestore" className="link-item">
-          Value Store
-        </Link>
-      </div>
     </div>
   );
 }

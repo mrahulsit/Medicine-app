@@ -77,13 +77,14 @@ div.container-fluid {
   border-bottom: 1px solid gray;
   position: fixed;
   top: 4.15em;
+  left: 0;
   z-index: 999;
   width: 100%;
 }
 .link-item {
   color: black;
   font-weight: 500;
-  z-index: -999;
+  position: static;
 }
 
 /* Medium screen and up */
