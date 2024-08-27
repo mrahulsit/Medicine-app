@@ -56,3 +56,25 @@
   margin-top: 1em;
   margin-left: 3em;
 }
+
+@media (width <= 480px) {
+  .home-container {
+    width: 100%;
+  }
+  .aboutText {
+    margin-left: 8.5%;
+    margin-top: 35%;
+  }
+  .search-content {
+    width: 90%;
+    height: 3em;
+    border-radius: 2em;
+    margin: 5% auto;
+  }
+  .search-input {
+    font-size: medium;
+  }
+  .shop {
+    margin-left: 1em;
+  }
+}

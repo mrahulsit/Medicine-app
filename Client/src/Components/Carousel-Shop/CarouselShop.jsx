@@ -34,8 +34,8 @@ export default function CarouselShop() {
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1,
-      partialVisibilityGutter: 50,
+      items: 3,
+      partialVisibilityGutter: 0,
     },
   };
   const data = [

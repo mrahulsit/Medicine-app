@@ -21,7 +21,7 @@ export default function Pincode({ name, setName, handleRequest, closeDrawer }) {
       </h1>
       <TextField
         sx={{
-          "& > :not(style)": { marginLeft: 1, marginTop: 0, width: "40ch" },
+          "& > :not(style)": { marginLeft: 1, marginTop: 0, width: "400px" },
         }}
         InputProps={{
           endAdornment: (

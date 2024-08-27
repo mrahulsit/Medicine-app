@@ -18,3 +18,33 @@
   font-weight: 500;
   color: rgb(0, 0, 0);
 }
+.mobile-device {
+  display: none;
+}
+@media (width <= 480px) {
+  .mobile-device {
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: #eaeaea;
+    padding: 0.5em;
+    left: 0;
+    display: flex;
+    gap: 0.5em;
+  }
+  .spanSmall {
+    display: none;
+  }
+  .spantext {
+    display: none;
+  }
+  .delivery-name {
+    margin-left: 0.5em;
+    font-weight: 500;
+    color: #858383;
+  }
+  .office-name {
+    font-weight: 700;
+  }
+}

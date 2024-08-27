@@ -35,3 +35,18 @@
   z-index: 1;
   background-color: black;
 }
+
+@media (width <= 480px) {
+  .carousel-container {
+    max-width: 100%;
+  }
+  .image-contain {
+    padding: 0.5em;
+  }
+  .image-shop {
+    width: 100%;
+  }
+  .react-multiple-carousel__arrow {
+    display: none;
+  }
+}

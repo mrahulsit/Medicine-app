@@ -1,24 +1,19 @@
 import * as React from "react";
-import Drawer from "@mui/material/Drawer";
 import Pincode from "./Pincode.jsx";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faTruckFast } from "@fortawesome/free-solid-svg-icons";
+import Drawer from "react-modern-drawer";
+import "react-modern-drawer/dist/index.css";
+import "./Sidebar.css";
 
 export default function Sidebar() {
-  const [state, setState] = React.useState({
-    right: false,
-  });
-
+  const [open, setOpen] = React.useState(false);
   const [name, setName] = React.useState("");
   const [postOffice, setPostOffice] = React.useState("");
 
-  const toggleDrawer = (open) => (event) => {
-    if (event && (event.key === "Tab" || event.key === "Shift")) {
-      return;
-    }
-
-    setState({ right: open });
+  const toggleDrawer = () => {
+    setOpen((prevState) => !prevState);
   };
 
   const handleRequest = async () => {
@@ -28,7 +23,6 @@ export default function Sidebar() {
       );
       const postOfficeName = res.data[0].PostOffice[0].Name;
       setPostOffice(postOfficeName);
-      toggleDrawer(false)();
     } catch (error) {
       console.error("Pincode Not Found!");
       setPostOffice("Pincode Not Found!");
@@ -42,7 +36,7 @@ export default function Sidebar() {
         &nbsp; Fast Delivery to
       </span>
       <br />
-      <span onClick={toggleDrawer(true)} className="spantext">
+      <span onClick={toggleDrawer} className="spantext">
         {postOffice ? (
           <span>
             {postOffice} <FontAwesomeIcon icon={faAngleDown} />
@@ -54,18 +48,38 @@ export default function Sidebar() {
         )}
       </span>
       <Drawer
-        anchor="right"
-        open={state.right}
-        onClose={toggleDrawer(false)}
-        disableEnforceFocus
+        open={open}
+        onClose={toggleDrawer}
+        direction="right"
+        className="drawer"
+        zIndex={9999}
+        style={{ width: "400px" }}
       >
         <Pincode
           name={name}
           setName={setName}
           handleRequest={handleRequest}
-          closeDrawer={toggleDrawer(false)}
+          closeDrawer={toggleDrawer}
         />
       </Drawer>
+
+      <div className="mobile-device">
+        <span className="delivery-name">
+          <FontAwesomeIcon icon={faTruckFast} style={{ color: "#089b6f" }} />
+          &nbsp; Fast Delivery to
+        </span>
+        <span onClick={toggleDrawer} className="office-name">
+          {postOffice ? (
+            <span>
+              {postOffice} <FontAwesomeIcon icon={faAngleDown} />
+            </span>
+          ) : (
+            <span>
+              Select Pincode <FontAwesomeIcon icon={faAngleDown} />
+            </span>
+          )}
+        </span>
+      </div>
     </div>
   );
 }

@@ -17,7 +17,7 @@ import PHARMACY from "./PHARMACY.png";
 import Pharmacy from "./PharmacyLogo.png";
 // Home-Card Images
 import blogimage from "./blogimage.jpg";
-import wandc from "./wandc.png";
+import wandc from "./women-child.jpg";
 import medicine from "./medicines.jpg";
 import medicare from "./medicare.jpg";
 import gift from "./giftimage.jpg";

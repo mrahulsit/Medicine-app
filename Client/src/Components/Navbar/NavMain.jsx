@@ -7,14 +7,27 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import {
   faCartShopping,
   faGift,
-  faMobile,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import Login from "../../Pages/Login";
 import { Navbar, Nav } from "react-bootstrap";
+import { Dropdown, IconButton } from "rsuite";
+import "rsuite/Dropdown/styles/index.css";
+import MenuIcon from "@rsuite/icons/Menu";
 
 function NavMain() {
+  const renderIconButton = (props, ref) => {
+    return (
+      <IconButton
+        {...props}
+        ref={ref}
+        icon={<MenuIcon />}
+        circle
+        color="green"
+        appearance="primary"
+      />
+    );
+  };
   return (
     <div>
       <Navbar
@@ -35,8 +48,7 @@ function NavMain() {
           </Link>
           <div className="divider"></div>
           <Sidebar />
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse
+          <Navbar
             id="responsive-navbar-nav"
             className="justify-content-between"
           >
@@ -77,69 +89,90 @@ function NavMain() {
                   Cart
                 </Link>
               </Nav.Item>
+              <Dropdown title="Menu" placement="bottomEnd">
+                <Dropdown.Item>
+                  <Link to="/medicine" className="link-item">
+                    Medicine
+                  </Link>
+                </Dropdown.Item>
+                <Dropdown.Item>
+                  <Link to="/healthcare" className="link-item">
+                    HealthCare
+                  </Link>
+                </Dropdown.Item>
+                <Dropdown.Item>
+                  <Link to="/plus" className="link-item">
+                    PLUS
+                  </Link>
+                </Dropdown.Item>
+                <Dropdown.Item>
+                  <Link to="/offers" className="link-item">
+                    Offers
+                  </Link>
+                </Dropdown.Item>
+                <Dropdown.Item>
+                  <Link to="/valuestore" className="link-item">
+                    Value Store
+                  </Link>
+                </Dropdown.Item>
+              </Dropdown>
             </div>
 
             <div className="d-lg-none mx-auto text-center">
-              <Nav className="flex-column align-items-center">
-                <Nav.Item className="">
-                  <FontAwesomeIcon
-                    icon={faMobile}
-                    size="lg"
-                    className="text-dark"
-                  />
-                  &nbsp;&nbsp;
+              <Nav className="flex-row align-items-center gap-3">
+                <Nav.Item className="link-tag">
                   <Link
-                    to="/footer"
-                    className="text-decoration-none text-light"
+                    to="/login"
+                    className="text-decoration-none item-text-color"
                   >
-                    Download App
+                    <FontAwesomeIcon
+                      icon={faUser}
+                      size="lg"
+                      className="item-text-color"
+                    />
                   </Link>
                 </Nav.Item>
-                <Nav.Item className="px-3 mb-3 d-flex text-light align-items-center link-tag">
-                  <FontAwesomeIcon
-                    icon={faUser}
-                    size="lg"
-                    className="text-white"
-                  />
-                  &nbsp;&nbsp;
-                  <Link
-                    to="#login"
-                    className="text-decoration-none text-light ms-2"
-                  >
-                    <Login />
-                  </Link>
-                </Nav.Item>
-
                 <Nav.Item className="d-flex flex-row">
                   <FontAwesomeIcon
                     icon={faCartShopping}
                     size="lg"
                     className="text-dark"
                   />
-                  <Link to="/cart" className="text-decoration-none text-dark">
-                    Cart
-                  </Link>
+                  <Link
+                    to="/cart"
+                    className="text-decoration-none text-dark"
+                  ></Link>
                 </Nav.Item>
+                <Dropdown renderToggle={renderIconButton} placement="bottomEnd">
+                  <Dropdown.Item>
+                    <Link to="/medicine" className="link-item">
+                      Medicine
+                    </Link>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <Link to="/healthcare" className="link-item">
+                      HealthCare
+                    </Link>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <Link to="/plus" className="link-item">
+                      PLUS
+                    </Link>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <Link to="/offers" className="link-item">
+                      Offers
+                    </Link>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <Link to="/valuestore" className="link-item">
+                      Value Store
+                    </Link>
+                  </Dropdown.Item>
+                </Dropdown>
               </Nav>
             </div>
-          </Navbar.Collapse>
-        </div>
-        <div className="small-nav">
-          <Link to="/medicine" className="link-item">
-            Medicine
-          </Link>
-          <Link to="/healthcare" className="link-item">
-            HealthCare
-          </Link>
-          <Link to="/plus" className="link-item">
-            PLUS
-          </Link>
-          <Link to="/offers" className="link-item">
-            Offers
-          </Link>
-          <Link to="/valuestore" className="link-item">
-            Value Store
-          </Link>
+          </Navbar>
         </div>
       </Navbar>
     </div>

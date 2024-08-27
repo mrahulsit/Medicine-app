@@ -34,3 +34,31 @@ img {
   position: relative;
   bottom: 0.1em;
 }
+.mobile-visible {
+  display: none;
+}
+
+@media (width <= 480px) {
+  .plus-image {
+    padding: 0 1em;
+    margin: 2em 0;
+  }
+  .plus-image > img {
+    display: none;
+  }
+  .plus-image > .mobile-visible {
+    display: block;
+    width: 100%;
+    border-radius: 0.5em;
+  }
+  .explore-button {
+    right: 0;
+    margin-top: 0;
+    position: relative;
+    bottom: 3em;
+    margin-left: 0.5em;
+    width: 30%;
+    border-radius: 0.5em;
+    font-size: small;
+  }
+}
