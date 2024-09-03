@@ -1,4 +1,5 @@
 import PharmacyLogo from "../../assets/PHARMACY.png";
+import "rsuite/dist/rsuite.min.css";
 import "./Navbar.css";
 import Sidebar from "../Sidebar/Sidebar";
 import "font-awesome/css/font-awesome.min.css";
@@ -12,7 +13,6 @@ import {
 import { Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import { Dropdown, IconButton } from "rsuite";
-import "rsuite/Dropdown/styles/index.css";
 import MenuIcon from "@rsuite/icons/Menu";
 
 function NavMain() {
