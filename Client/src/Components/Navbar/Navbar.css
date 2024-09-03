@@ -6,7 +6,9 @@ nav.border-0.w-100 {
   background-color: #fff;
   padding: 0.2em 3em;
   z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.303);
 }
+
 div.container-fluid {
   padding: 0;
 }
@@ -37,10 +39,8 @@ div.container-fluid {
   font-weight: 600;
 }
 .divider {
-  width: 1em;
   height: 2.5em;
   border-right: 3px solid rgba(128, 128, 128, 0.432);
-  margin-right: 2em;
 }
 .cart-name {
   text-transform: capitalize;

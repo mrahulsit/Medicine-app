@@ -38,7 +38,7 @@ function NavMain() {
       >
         <div className="container-fluid">
           <Link to="/">
-            <div className="navbar-brand d-flex align-items-center">
+            <div className="navbar-brand d-flex align-items-center m-0">
               <img src={PharmacyLogo} alt="Pharmacy Logo" className="logo" />
               <div className="flex-slogan mt-1">
                 <div>Pharmacy</div>

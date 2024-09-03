@@ -4,8 +4,10 @@ const cors = require("cors");
 require("dotenv").config();
 
 const port = process.env.PORT || 5000;
+
 const register = require("./RegisterRoute/register.js");
 const login = require("./LoginRoute/login.js");
+const mail = require("./Mail/Mail.js");
 
 const app = express();
 
@@ -31,6 +33,7 @@ app.use(bodyParser.json());
 // Use the routes
 app.use("/api/register", register);
 app.use("/api/login", login);
+app.use("/api/mail", mail);
 
 // Default route
 app.get("/", (req, res) => {
