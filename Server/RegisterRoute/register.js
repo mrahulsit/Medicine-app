@@ -1,8 +1,7 @@
-import bcrypt from "bcryptjs";
-import User from "../Schema/models.js";
-import { Router } from "express";
-const router = Router();
-const { genSalt, hash } = bcrypt;
+const bcrypt = require("bcryptjs");
+const User = require("../Schema/models"); // Ensure this path is correct
+const express = require("express");
+const router = express.Router();
 
 // Register Route
 router.post("/", async (req, res) => {
@@ -20,8 +19,8 @@ router.post("/", async (req, res) => {
       return res.status(400).json({ message: "Email already exists" });
     }
 
-    const salt = await genSalt(10);
-    const hashedPassword = await hash(password, salt);
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(password, salt);
 
     const user = new User({ username, password: hashedPassword, email });
     await user.save();
@@ -33,4 +32,4 @@ router.post("/", async (req, res) => {
   }
 });
 
-export default router;
+module.exports = router;

@@ -1,10 +1,18 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 053d89572a167be3423123194494a0cd7e14eb2f
 import { useState, useEffect } from "react";
 import axios from "axios";
 import LoginBanner from "../assets/LoginBanner.png";
 import "../Styles/Login.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+<<<<<<< HEAD
 import { Link, useNavigate } from "react-router-dom";
+=======
+import { Link } from "react-router-dom";
+>>>>>>> 053d89572a167be3423123194494a0cd7e14eb2f
 import Profile from "../assets/profile.png";
 import Signup from "./Signup";
 
@@ -15,7 +23,10 @@ export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const [fadeClass, setFadeClass] = useState("fade-enter");
+<<<<<<< HEAD
   const navigate = useNavigate();
+=======
+>>>>>>> 053d89572a167be3423123194494a0cd7e14eb2f
 
   useEffect(() => {
     setFadeClass("fade-enter fade-enter-active");
@@ -54,11 +65,14 @@ export default function Login() {
 
       if (response.data.token) {
         localStorage.setItem("token", response.data.token);
+<<<<<<< HEAD
         localStorage.setItem("username", username);
         toast.success("User Successfully Logged In");
         setTimeout(() => {
           navigate("/");
         }, 5000);
+=======
+>>>>>>> 053d89572a167be3423123194494a0cd7e14eb2f
       } else {
         setError("Invalid username or password.");
         toast.error("Invalid username or password.");

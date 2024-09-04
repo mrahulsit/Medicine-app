@@ -2,16 +2,23 @@
   "name": "server",
   "version": "1.0.0",
   "main": "server.js",
+<<<<<<< HEAD
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "dev": "nodemon server.js"
+=======
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+>>>>>>> 053d89572a167be3423123194494a0cd7e14eb2f
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+<<<<<<< HEAD
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
@@ -29,5 +36,8 @@
     "@types/mongoose": "^5.11.97",
     "@types/nodemailer": "^6.4.15",
     "nodemon": "^3.1.4"
+=======
+    "server": "file:"
+>>>>>>> 053d89572a167be3423123194494a0cd7e14eb2f
   }
 }

@@ -86,6 +86,10 @@ div.container-fluid {
   font-weight: 500;
   position: static;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 053d89572a167be3423123194494a0cd7e14eb2f
 /* Medium screen and up */
 @media (width <= 768px) {
   .link-item {

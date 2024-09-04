@@ -1,11 +1,8 @@
-import { Router } from "express";
-const router = Router();
-import jwt from "jsonwebtoken";
-import bcrypt from "bcryptjs";
-import User from "../Schema/models.js";
-const { sign } = jwt;
-import dotenv from "dotenv";
-dotenv.config();
+const express = require("express");
+const router = express.Router();
+const jwt = require("jsonwebtoken");
+require("dotenv").config();
+const User = require("../Schema/models");
 
 // Login Route
 router.post("/", async (req, res) => {
@@ -33,7 +30,7 @@ router.post("/", async (req, res) => {
     }
 
     // Generate JWT token
-    const token = sign({ userId: user._id }, process.env.JWT_SECRET, {
+    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {
       expiresIn: "1h",
     });
 
@@ -45,4 +42,4 @@ router.post("/", async (req, res) => {
   }
 });
 
-export default router;
+module.exports = router;

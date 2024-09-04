@@ -10,6 +10,7 @@ import {
   faGift,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
+<<<<<<< HEAD
 import { Link, useNavigate } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import { Dropdown, IconButton } from "rsuite";
@@ -48,6 +49,14 @@ function NavMain() {
     </span>
   );
 
+=======
+import { Link } from "react-router-dom";
+import { Navbar, Nav } from "react-bootstrap";
+import { Dropdown, IconButton } from "rsuite";
+import MenuIcon from "@rsuite/icons/Menu";
+
+function NavMain() {
+>>>>>>> 053d89572a167be3423123194494a0cd7e14eb2f
   const renderIconButton = (props, ref) => {
     return (
       <IconButton
@@ -60,7 +69,10 @@ function NavMain() {
       />
     );
   };
+<<<<<<< HEAD
 
+=======
+>>>>>>> 053d89572a167be3423123194494a0cd7e14eb2f
   return (
     <div>
       <Navbar
@@ -70,7 +82,11 @@ function NavMain() {
         fixed="top"
       >
         <div className="container-fluid">
+<<<<<<< HEAD
           <Link to="/" className="text-decoration-none">
+=======
+          <Link to="/">
+>>>>>>> 053d89572a167be3423123194494a0cd7e14eb2f
             <div className="navbar-brand d-flex align-items-center m-0">
               <img src={PharmacyLogo} alt="Pharmacy Logo" className="logo" />
               <div className="flex-slogan mt-1">
@@ -86,6 +102,7 @@ function NavMain() {
             className="justify-content-between"
           >
             <div className="d-none d-lg-flex text-center align-items-center margin-navbar gap-5">
+<<<<<<< HEAD
               <Nav.Item>
                 <Dropdown
                   renderToggle={renderToggle}
@@ -117,6 +134,26 @@ function NavMain() {
               </Nav.Item>
               <Nav.Item>
                 <Link to="/footer" className="text-decoration-none text-dark">
+=======
+              <Nav.Item className="link-tag">
+                <Link
+                  to="/login"
+                  className="text-decoration-none item-text-color"
+                >
+                  <FontAwesomeIcon
+                    icon={faUser}
+                    size="lg"
+                    className="item-text-color me-2"
+                  />
+                  Hello,Log in
+                </Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Link
+                  to="/footer"
+                  className="text-decoration-none item-text-color"
+                >
+>>>>>>> 053d89572a167be3423123194494a0cd7e14eb2f
                   <FontAwesomeIcon
                     icon={faGift}
                     size="lg"
@@ -168,7 +205,11 @@ function NavMain() {
               <Nav className="flex-row align-items-center gap-3">
                 <Nav.Item className="link-tag">
                   <Link
+<<<<<<< HEAD
                     to={username ? "/profile" : "/login"}
+=======
+                    to="/login"
+>>>>>>> 053d89572a167be3423123194494a0cd7e14eb2f
                     className="text-decoration-none item-text-color"
                   >
                     <FontAwesomeIcon
@@ -221,6 +262,7 @@ function NavMain() {
           </Navbar>
         </div>
       </Navbar>
+<<<<<<< HEAD
       <Modal open={open} onClose={handleCloseModal}>
         <Modal.Header>
           <Modal.Title>Do you really want to sign out?</Modal.Title>
@@ -240,6 +282,8 @@ function NavMain() {
           </Button>
         </Modal.Footer>
       </Modal>
+=======
+>>>>>>> 053d89572a167be3423123194494a0cd7e14eb2f
     </div>
   );
 }

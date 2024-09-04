@@ -1,10 +1,15 @@
 import "./Footer.css";
+<<<<<<< HEAD
 import { useState } from "react";
 import PharmacyLogo from "../../assets/PHARMACY.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+=======
+import PharmacyLogo from "../../assets/PHARMACY.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+>>>>>>> 053d89572a167be3423123194494a0cd7e14eb2f
 import {
   faFacebook,
   faInstagram,
@@ -15,6 +20,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+<<<<<<< HEAD
   const [email, setEmail] = useState("");
 
   const submitLetter = async (e) => {
@@ -34,6 +40,8 @@ const Footer = () => {
       toast.error("Failed to send email. Please try again");
     }
   };
+=======
+>>>>>>> 053d89572a167be3423123194494a0cd7e14eb2f
   return (
     <>
       <div className="divider-footer"></div>
@@ -47,6 +55,7 @@ const Footer = () => {
             </p>
           </div>
           <div id="newsletter">
+<<<<<<< HEAD
             <input
               type="text"
               name="email"
@@ -58,6 +67,10 @@ const Footer = () => {
             <button type="button" onClick={submitLetter}>
               Subscribe
             </button>
+=======
+            <input type="text" name="email" placeholder="Email" id="letter" />
+            <button type="button">Subscribe</button>
+>>>>>>> 053d89572a167be3423123194494a0cd7e14eb2f
           </div>
         </div>
 
@@ -142,7 +155,10 @@ const Footer = () => {
 
         {/* <div className="hindi-slogan">हमेशा आपके साथ, हमेशा आपके पास।</div> */}
       </div>
+<<<<<<< HEAD
       <ToastContainer />
+=======
+>>>>>>> 053d89572a167be3423123194494a0cd7e14eb2f
     </>
   );
 };

@@ -1,9 +1,9 @@
-import { connect, Schema, model } from "mongoose";
-import dotenv from "dotenv";
-dotenv.config();
+const mongoose = require("mongoose");
+require("dotenv").config();
 
 // Connect to MongoDB database
-connect(process.env.MONGO_URI)
+mongoose
+  .connect(process.env.MONGO_URI)
   .then(() => {
     console.log("Connected to MongoDB");
   })
@@ -11,12 +11,12 @@ connect(process.env.MONGO_URI)
     console.error("Could not connect to MongoDB", err);
   });
 
-const userSchema = new Schema({
+const userSchema = new mongoose.Schema({
   username: { type: String, required: true, unique: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
 });
 
-const User = model("User", userSchema);
+const User = mongoose.model("User", userSchema);
 
-export default User;
+module.exports = User;
