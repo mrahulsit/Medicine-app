@@ -86,7 +86,3 @@ Contributions are welcome! If you have any improvements or suggestions, feel fre
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to further customize this `README.md` to suit your project's specific needs.
